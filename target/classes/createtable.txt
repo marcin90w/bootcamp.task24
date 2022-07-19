@@ -1,0 +1,9 @@
+CREATE SCHEMA `budget` DEFAULT CHARACTER SET utf8 COLLATE utf8_polish_ci ;
+
+CREATE TABLE expenses (
+    id INT NOT NULL AUTO_INCREMENT,
+    type VARCHAR(15) NOT NULL,
+    description VARCHAR(45) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    date DATE NOT NULL,
+    PRIMARY KEY (id));

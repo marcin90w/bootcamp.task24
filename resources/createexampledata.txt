@@ -1,0 +1,6 @@
+INSERT INTO expenses (type, description, amount, date) VALUES
+('outcome', 'paliwo', '300', '2022-07-01'),
+('outcome', 'jedzenie', '50.45', '2022-07-02'),
+('outcome', 'leki', '34.66', '2022-07-02'),
+('income', 'pensja Marcin', '1000', '2022-07-10'),
+('outcome', 'restauracja', '120', '2022-07-11');
