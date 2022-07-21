@@ -1,13 +1,18 @@
 package pl.javny.expensesrepository.app;
 
-import pl.javny.expensesrepository.data.ExpenseDao;
-import pl.javny.expensesrepository.data.Sample;
+import pl.javny.expensesrepository.data.ReckonDao;
+import pl.javny.expensesrepository.data.ReckonLogic;
+
+import java.util.Scanner;
 
 public class MainApp {
     public static void main(String[] args) {
     // First - Create table from file createtable.txt from /resources
 
-        ExpenseDao dao = new ExpenseDao();
+        Scanner scanner = new Scanner(System.in);
+        ReckonLogic app = new ReckonLogic();
+        app.runAppLogic(scanner);
+
 
         /* if you want to input some samples - use this code
         Sample sample = new Sample();
@@ -18,8 +23,5 @@ public class MainApp {
             dao.insertSampleData(sql);
         }
          */
-
-        dao.run();
-
     }
 }

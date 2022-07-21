@@ -1,21 +1,20 @@
 package pl.javny.expensesrepository.data;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-public class Expense {
+public class Reckon {
     private int id;
     private String type;
     private String description;
     private double amount;
     private LocalDate date;
 
-    public Expense(int id, String type, String description, double amount, LocalDate date) {
+    public Reckon(int id, String type, String description, double amount, LocalDate date) {
         this(type, description, amount, date);
         this.id = id;
     }
 
-    public Expense(String type, String description, double amount, LocalDate date) {
+    public Reckon(String type, String description, double amount, LocalDate date) {
         this.type = type;
         this.description = description;
         this.amount = amount;
