@@ -1,6 +1,5 @@
 package pl.javny.expensesrepository.data;
 
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class ReckonLogic {

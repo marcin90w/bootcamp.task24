@@ -16,7 +16,7 @@ public class ReckonSave {
         type = getType(scanner, exit, type);
         String description = scanner.nextLine();
         System.out.println("podaj kwotę");
-        Double amount = scanner.nextDouble();
+        int amount = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Podaj datę YYYY-MM-DD");
         String dateToParse = scanner.nextLine();
@@ -25,6 +25,7 @@ public class ReckonSave {
 
         ReckonDao reckonDao = new ReckonDao();
         reckonDao.addToBudget(reckon);
+        System.out.println("Utworzono rozliczenie: " + reckonDao);
 
     }
 

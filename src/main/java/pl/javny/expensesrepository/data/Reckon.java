@@ -6,15 +6,15 @@ public class Reckon {
     private int id;
     private String type;
     private String description;
-    private double amount;
+    private int amount;
     private LocalDate date;
 
-    public Reckon(int id, String type, String description, double amount, LocalDate date) {
+    public Reckon(int id, String type, String description, int amount, LocalDate date) {
         this(type, description, amount, date);
         this.id = id;
     }
 
-    public Reckon(String type, String description, double amount, LocalDate date) {
+    public Reckon(String type, String description, int amount, LocalDate date) {
         this.type = type;
         this.description = description;
         this.amount = amount;
@@ -45,11 +45,11 @@ public class Reckon {
         this.description = description;
     }
 
-    public double getAmount() {
+    public int getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 

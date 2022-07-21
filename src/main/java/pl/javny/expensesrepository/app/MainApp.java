@@ -1,6 +1,5 @@
 package pl.javny.expensesrepository.app;
 
-import pl.javny.expensesrepository.data.ReckonDao;
 import pl.javny.expensesrepository.data.ReckonLogic;
 
 import java.util.Scanner;

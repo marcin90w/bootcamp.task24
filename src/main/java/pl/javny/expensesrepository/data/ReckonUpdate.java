@@ -1,6 +1,5 @@
 package pl.javny.expensesrepository.data;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.InputMismatchException;
@@ -31,11 +30,13 @@ public class ReckonUpdate {
         System.out.println("Podaj opis:");
         String description = scanner.nextLine();
         System.out.println("Podaj kwotę");
-        Double amount = scanner.nextDouble();
+        int amount = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Podaj datę: pattern yyyy-mm-dd");
         String dateToParse = scanner.nextLine();
         LocalDate date = LocalDate.parse(dateToParse, datePattern);
         Reckon reckon = new Reckon(index, type, description, amount, date);
         reckonDao.updateRow(reckon);
+        System.out.println("Zaktualizowano indeks nr " + index);
     }
 }
